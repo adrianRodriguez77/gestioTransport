@@ -1,6 +1,6 @@
-// Clase Conductor
-class Conductor(val nombre: String, val salario: Double) {
+
+class Conductor(val nom: String, val salari: Double) {
     fun altaConductor() {
-        println("Conductor dado de alta: $nombre")
+        println("$nom ha sigut donat d'alta.")
     }
 }

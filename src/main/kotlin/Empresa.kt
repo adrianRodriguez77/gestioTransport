@@ -1,45 +1,40 @@
-// Clase EmpresaTransporte
-class EmpresaTransporte {
-    val conductores = mutableListOf<Conductor>()
-    val autobuses = mutableListOf<Autobus>()
 
-    fun altaConductor(): List<Conductor> {
-        print("Nombre del conductor: ")
-        val nombreConductor = readLine() ?: ""
-        print("Salario del conductor: ")
-        val salarioConductor = readLine()?.toDoubleOrNull() ?: 0.0
+class EmpresaTransport {
+    val conductors = mutableListOf<Conductor>()
+    val autobusos = mutableListOf<Autobus>()
 
-        val conductor = Conductor(nombreConductor, salarioConductor)
-        conductores.add(conductor)
+    fun altaConductor(nom: String, salari: Double): List<Conductor> {
+        val conductor = Conductor(nom, salari)
+        conductors.add(conductor)
         conductor.altaConductor()
-        return conductores
+        return conductors
     }
 
-    fun altaAutobusUrbano(numeroIdentificacion: String, numIdConductorUrbano: String, precioBase: Double, ruta: String) {
-        val conductorUrbano = buscarConductor(numIdConductorUrbano)
-        if (conductorUrbano != null) {
-            val autobus = AutobusUrbano(numeroIdentificacion, conductorUrbano, precioBase, ruta)
-            autobuses.add(autobus)
+    fun altaAutobusUrba(numIdentificacio: String, numIdConductorUrba: String, preuBase: Double, ruta: String) {
+        val conductorUrba = trobarConductor(numIdConductorUrba)
+        if (conductorUrba != null) {
+            val autobus = AutobusUrba(numIdentificacio, conductorUrba, preuBase, ruta)
+            autobusos.add(autobus)
             autobus.altaAutobus()
         } else {
-            println("No se encontró un conductor con el nombre proporcionado.")
+            println("Conductor no trobat.")
         }
     }
 
-    fun altaAutobusInterurbano(numeroIdentificacion: String, numIdConductorInterurbano: String, precioBase: Double, kilometros: Int) {
-        val conductorInterurbano = buscarConductor(numIdConductorInterurbano)
-        if (conductorInterurbano != null) {
-            val autobus = AutobusInterurbano(numeroIdentificacion, conductorInterurbano, precioBase, kilometros)
-            autobuses.add(autobus)
+    fun altaAutobusInterurba(numIdentificacio: String, numIdConductorInterurbano: String, precioBase: Double, kilometros: Int) {
+        val conductorInterurba = trobarConductor(numIdConductorInterurbano)
+        if (conductorInterurba != null) {
+            val autobus = AutobusInterurba(numIdentificacio, conductorInterurba, precioBase, kilometros)
+            autobusos.add(autobus)
             autobus.altaAutobus()
         } else {
-            println("No se encontró un conductor con el nombre proporcionado.")
+            println("Conductor no trobat.")
         }
     }
 
-    private fun buscarConductor(numIdConductor: String): Conductor? {
-        for (conductor in conductores) {
-            if (conductor.nombre == numIdConductor) {
+    private fun trobarConductor(numIdConductor: String): Conductor? {
+        for (conductor in conductors) {
+            if (conductor.nom == numIdConductor) {
                 return conductor
             }
         }
@@ -49,9 +44,9 @@ class EmpresaTransporte {
     fun comprarBillete(numId: String) {
         val autobus = buscarAutobus(numId)
         if (autobus != null) {
-            val precio = autobus.calcularPrecio()
-            println("Número de identificación: ${autobus.numeroIdentificacion}")
-            println("Nombre del conductor: ${autobus.conductor.nombre}")
+            val precio = autobus.calcularPreu()
+            println("Número de identificación: ${autobus.numIdentificacio}")
+            println("Nombre del conductor: ${autobus.conductor.nom}")
             println("Precio del billete: $precio")
         } else {
             println("No se encontró un autobús con el número de identificación proporcionado.")
@@ -59,8 +54,8 @@ class EmpresaTransporte {
     }
 
     private fun buscarAutobus(numId: String): Autobus? {
-        for (autobus in autobuses) {
-            if (autobus.numeroIdentificacion == numId) {
+        for (autobus in autobusos) {
+            if (autobus.numIdentificacio == numId) {
                 return autobus
             }
         }
@@ -68,16 +63,16 @@ class EmpresaTransporte {
     }
 
     fun listarAutobuses() {
-        println("Lista de Autobuses:")
-        for (autobus in autobuses) {
-            println("- Número de identificación: ${autobus.numeroIdentificacion}")
+        println("Llista d'Autobusos:")
+        for (autobus in autobusos) {
+            println(autobus.numIdentificacio)
         }
     }
 
     fun listarConductores() {
-        println("Lista de Conductores:")
-        for (conductor in conductores) {
-            println("- Nombre: ${conductor.nombre}")
+        println("Llista de Conductors:")
+        for (conductor in conductors) {
+            println(conductor.nom)
         }
     }
 }

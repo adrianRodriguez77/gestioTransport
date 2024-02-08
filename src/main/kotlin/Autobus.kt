@@ -1,5 +1,5 @@
-// Clase Autobus
-abstract class Autobus(val numeroIdentificacion: String, val conductor: Conductor, val precioBase: Double) {
+
+abstract class Autobus(val numIdentificacio: String, val conductor: Conductor, val preuBase: Double) {
     abstract fun altaAutobus()
-    abstract fun calcularPrecio(): Double
+    abstract fun calcularPreu(): Double
 }
