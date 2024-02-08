@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33862c63-517b-415e-8d77-768cf9beb09a" name="Changes" comment="" />
+    <list default="true" id="33862c63-517b-415e-8d77-768cf9beb09a" name="Changes" comment="">
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Autobus.kt" afterDir="false" />
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Conductor.kt" afterDir="false" />
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Empresa.kt" afterDir="false" />
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Funcions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Autobus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Conductor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Empresa.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Funcions.kt" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/gradle.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/vcs.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/workspace.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Main.kt" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,12 +32,21 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="/dades/AdriR/M03/UF4/gestioTransport" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2c53xfxU9ysSIoYs36MzdcsdBkk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,13 +55,45 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build gestioTransport.executor": "Run",
+    "Kotlin.FuncionsKt.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "/home/adrian.rodriguez.vegas.7e6/Escriptori/DADES/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Main.kt"
   }
 }]]></component>
+  <component name="RunManager" selected="Kotlin.MainKt">
+    <configuration name="FuncionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.FuncionsKt" />
+      <module name="org.example.gestioTransport.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="org.example.gestioTransport.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.FuncionsKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-3c5dfc45" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +110,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>13</line>
+          <line>6</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
