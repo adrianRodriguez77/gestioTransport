@@ -4,22 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33862c63-517b-415e-8d77-768cf9beb09a" name="Changes" comment="">
-      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Autobus.kt" afterDir="false" />
-      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Conductor.kt" afterDir="false" />
-      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Empresa.kt" afterDir="false" />
-      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Funcions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Autobus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Conductor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Empresa.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Funcions.kt" afterDir="false" />
-      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/gradle.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/vcs.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="33862c63-517b-415e-8d77-768cf9beb09a" name="Changes" comment="Classes">
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Autobus Urbano.kt" afterDir="false" />
+      <change afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/AutobusInterurbano.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Autobus Urbano.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/AutobusInterurbano.kt" afterDir="false" />
       <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/.idea/workspace.xml" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Autobus.kt" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Autobus.kt" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Conductor.kt" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Conductor.kt" afterDir="false" />
+      <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Empresa.kt" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Empresa.kt" afterDir="false" />
       <change beforePath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Main.kt" beforeDir="false" afterPath="/dades/AdriR/M03/UF4/gestioTransport/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Autobus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Autobus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Conductor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Conductor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Empresa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Empresa.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +101,27 @@
       <option name="presentableId" value="Default" />
       <updated>1707387861292</updated>
     </task>
+    <task id="LOCAL-00001" summary="Classes">
+      <option name="closed" value="true" />
+      <created>1707395011073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707395011073</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>6</line>
+          <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

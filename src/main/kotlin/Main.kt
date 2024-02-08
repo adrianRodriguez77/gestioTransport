@@ -1,63 +1,44 @@
-import java.util.Scanner
-
-val scanner = Scanner(System.`in`)
 fun main() {
     val empresaTransporte = EmpresaTransporte()
 
-    // Menú principal
+    var opcion: Int
     do {
-        println("""
-            MENÚ PRINCIPAL
-            1. Alta de conductores
-            2. Alta de autobuses urbanos
-            3. Alta de autobuses interurbanos
-            4. Comprar billete
-            5. Listar autobuses
-            6. Listar conductores
-            
-            Selecciona una opció: 
-        """.trimMargin())
-        val opcMenu = scanner.nextInt()
+        println("\n--- Menú Principal ---")
+        println("1. Alta de conductores")
+        println("2. Alta de autobuses urbanos")
+        println("3. Alta de autobuses interurbanos")
+        println("4. Comprar billete")
+        println("5. Listar autobuses")
+        println("6. Listar conductores")
+        println("0. Salir")
+        print("Selecciona una opción: ")
+        opcion = readLine()?.toIntOrNull() ?: -1
 
-        when (opcMenu) {
+        when (opcion) {
             1 -> {
-                print("Nombre del conductor: ")
-                val nombreConductor = scanner.next()
-                print("Salario del conductor: ")
-                val salarioConductor = scanner.nextDouble()
-                empresaTransporte.altaConductor(nombreConductor, salarioConductor)
+
             }
             2 -> {
                 print("Número de identificación del autobús urbano: ")
-                val numIdAutobusUrbano = scanner.next()
+                val numIdAutobusUrbano = readLine() ?: ""
                 print("Número de identificación del conductor: ")
-                val numIdConductorUrbano = scanner.next()
-                val conductorUrbano = empresaTransporte.conductores.find { it.nombre == numIdConductorUrbano }
-                if (conductorUrbano != null) {
-                    print("Precio base del autobús urbano: ")
-                    val precioBaseUrbano = scanner.nextDouble()
-                    print("Ruta del autobús urbano (A o cualquier otra): ")
-                    val rutaUrbano = scanner.next()
-                    empresaTransporte.altaAutobusUrbano(numIdAutobusUrbano, conductorUrbano, precioBaseUrbano, rutaUrbano)
-                } else {
-                    println("No se encontró un conductor con el nombre proporcionado.")
-                }
+                val numIdConductorUrbano = readLine() ?: ""
+                print("Precio base del autobús urbano: ")
+                val precioBaseUrbano = readLine()?.toDoubleOrNull() ?: 0.0
+                print("Ruta del autobús urbano (A o cualquier otra): ")
+                val rutaUrbano = readLine() ?: ""
+                empresaTransporte.altaAutobusUrbano(numIdAutobusUrbano, numIdConductorUrbano, precioBaseUrbano, rutaUrbano)
             }
             3 -> {
                 print("Número de identificación del autobús interurbano: ")
                 val numIdAutobusInterurbano = readLine() ?: ""
                 print("Número de identificación del conductor: ")
                 val numIdConductorInterurbano = readLine() ?: ""
-                val conductorInterurbano = empresaTransporte.conductores.find { it.nombre == numIdConductorInterurbano }
-                if (conductorInterurbano != null) {
-                    print("Precio base del autobús interurbano: ")
-                    val precioBaseInterurbano = readLine()?.toDoubleOrNull() ?: 0.0
-                    print("Número de kilómetros del autobús interurbano: ")
-                    val kilometrosInterurbano = readLine()?.toIntOrNull() ?: 0
-                    empresaTransporte.altaAutobusInterurbano(numIdAutobusInterurbano, conductorInterurbano, precioBaseInterurbano, kilometrosInterurbano)
-                } else {
-                    println("No se encontró un conductor con el nombre proporcionado.")
-                }
+                print("Precio base del autobús interurbano: ")
+                val precioBaseInterurbano = readLine()?.toDoubleOrNull() ?: 0.0
+                print("Número de kilómetros del autobús interurbano: ")
+                val kilometrosInterurbano = readLine()?.toIntOrNull() ?: 0
+                empresaTransporte.altaAutobusInterurbano(numIdAutobusInterurbano, numIdConductorInterurbano, precioBaseInterurbano, kilometrosInterurbano)
             }
             4 -> {
                 print("Número de identificación del autobús: ")
@@ -77,5 +58,5 @@ fun main() {
                 println("Opción no válida. Inténtalo de nuevo.")
             }
         }
-    } while (opcMenu != 0)
+    } while (opcion != 0)
 }
