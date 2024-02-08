@@ -50,13 +50,13 @@ fun main() {
             4 -> {
                 print("Número de identificació de l'autobús: ")
                 val numIdAutobus = scanner.next()
-                empresaTransporte.comprarBillete(numIdAutobus)
+                empresaTransporte.comprarBitllet(numIdAutobus)
             }
             5 -> {
-                empresaTransporte.listarAutobuses()
+                empresaTransporte.llistarAutobuses()
             }
             6 -> {
-                empresaTransporte.listarConductores()
+                empresaTransporte.llistarConductores()
             }
             7 -> {
                 println("Sortint...")

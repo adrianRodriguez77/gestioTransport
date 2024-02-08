@@ -41,8 +41,8 @@ class EmpresaTransport {
         return null
     }
 
-    fun comprarBillete(numId: String) {
-        val autobus = buscarAutobus(numId)
+    fun comprarBitllet(numId: String) {
+        val autobus = trobarAutobus(numId)
         if (autobus != null) {
             val precio = autobus.calcularPreu()
             println("Número de identificación: ${autobus.numIdentificacio}")
@@ -53,7 +53,7 @@ class EmpresaTransport {
         }
     }
 
-    private fun buscarAutobus(numId: String): Autobus? {
+    private fun trobarAutobus(numId: String): Autobus? {
         for (autobus in autobusos) {
             if (autobus.numIdentificacio == numId) {
                 return autobus
@@ -62,14 +62,14 @@ class EmpresaTransport {
         return null
     }
 
-    fun listarAutobuses() {
+    fun llistarAutobuses() {
         println("Llista d'Autobusos:")
         for (autobus in autobusos) {
             println(autobus.numIdentificacio)
         }
     }
 
-    fun listarConductores() {
+    fun llistarConductores() {
         println("Llista de Conductors:")
         for (conductor in conductors) {
             println(conductor.nom)
