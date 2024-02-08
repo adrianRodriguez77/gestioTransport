@@ -1,12 +1,12 @@
 // Clase AutobusInterurbano
-class AutobusInterurba(numeroIdentificacion: String, conductor: Conductor, precioBase: Double, val kilometros: Int) :
+class AutobusInterurba(numeroIdentificacion: String, conductor: Conductor, precioBase: Double, val quilometres: Int) :
     Autobus(numeroIdentificacion, conductor, precioBase) {
 
     override fun altaAutobus() {
-        println("Autobús interurbano dado de alta: $numIdentificacio")
+        println("Autobús interurbà $numIdentificacio donat d'alta.")
     }
 
     override fun calcularPreu(): Double {
-        return preuBase * kilometros
+        return preuBase * quilometres
     }
 }

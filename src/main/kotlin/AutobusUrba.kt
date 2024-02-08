@@ -3,7 +3,7 @@ class AutobusUrba(numIdentificacio: String, conductor: Conductor, preuBase: Doub
     Autobus(numIdentificacio, conductor, preuBase) {
 
     override fun altaAutobus() {
-        println("Autobús urbano dado de alta: $numIdentificacio")
+        println("Autobús urbà $numIdentificacio donat d'alta.")
     }
 
     override fun calcularPreu(): Double {
